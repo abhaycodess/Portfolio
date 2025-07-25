@@ -291,10 +291,9 @@ body {
     font-family: var(--font-tech);
     letter-spacing: -0.02em;
     animation: fadeInUp 0.8s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.2rem;
+    display: block;
+    text-align: center;
+    min-height: 1.2em;
 }
 
 .typing-text {
@@ -302,17 +301,30 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    overflow: hidden;
-    border-right: 0.15em solid transparent;
-    white-space: nowrap;
-    margin: 0 auto;
-    animation: typing 3.5s steps(40, end) 0.5s both;
+    color: var(--text-primary);
+    display: inline-block;
 }
 
-.cursor {
+/* Greeting styles */
+.greeting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.8s ease;
+}
+
+.wave-emoji {
+    font-size: 2rem;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.greeting-text {
+    font-size: 1.2rem;
     color: var(--accent-primary);
-    animation: blink 1s infinite;
-    font-weight: 400;
+    font-weight: 500;
+    font-family: var(--font-tech);
 }
 
 .hero-tagline {
@@ -771,12 +783,24 @@ body {
     }
 }
 
-@keyframes blink {
-    0%, 50% {
-        opacity: 1;
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
     }
-    51%, 100% {
-        opacity: 0;
+    10%, 30% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    40% {
+        transform: rotate(14deg);
+    }
+    50% {
+        transform: rotate(-4deg);
+    }
+    60% {
+        transform: rotate(10deg);
     }
 }
 

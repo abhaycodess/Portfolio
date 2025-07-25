@@ -56,9 +56,12 @@
         </div>
         <div class="container">
             <div class="hero-content">
+                <div class="greeting">
+                    <span class="wave-emoji">👋</span>
+                    <span class="greeting-text">Hello there!</span>
+                </div>
                 <h1 class="hero-name">
                     <span class="typing-text" data-text="Abhay Raj Dwivedi"></span>
-                    <span class="cursor">|</span>
                 </h1>
                 <p class="hero-tagline">B.Tech CS Student | Data Science Enthusiast | Creative Developer</p>
                 <p class="hero-subtitle">Maharana Pratap Group of Institutions, Kanpur</p>
@@ -266,17 +269,22 @@
             const textElement = document.querySelector('.typing-text');
             const text = textElement.getAttribute('data-text');
             textElement.textContent = '';
+            textElement.style.width = '0';
             
             let i = 0;
             function type() {
                 if (i < text.length) {
                     textElement.textContent += text.charAt(i);
                     i++;
-                    setTimeout(type, 100);
+                    setTimeout(type, 120);
+                } else {
+                    // Animation complete, ensure full visibility
+                    textElement.style.width = 'auto';
+                    textElement.style.overflow = 'visible';
                 }
             }
             
-            setTimeout(type, 1000); // Start typing after 1 second
+            setTimeout(type, 1500); // Start typing after 1.5 seconds
         }
 
         // Initialize typing animation when page loads
