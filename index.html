@@ -58,7 +58,7 @@
             <div class="hero-content">
                 <div class="greeting">
                     <span class="wave-emoji">👋</span>
-                    <span class="greeting-text">Hello there!</span>
+                    <span class="greeting-text">Hello there! I am</span>
                 </div>
                 <h1 class="hero-name">
                     <span class="typing-text" data-text="Abhay Raj Dwivedi"></span>
@@ -270,17 +270,21 @@
             const text = textElement.getAttribute('data-text');
             textElement.textContent = '';
             textElement.style.width = '0';
+            textElement.style.borderRight = 'none';
             
             let i = 0;
             function type() {
                 if (i < text.length) {
                     textElement.textContent += text.charAt(i);
+                    // Dynamically adjust width based on content
+                    textElement.style.width = (i + 1) * 0.6 + 'em';
                     i++;
-                    setTimeout(type, 120);
+                    setTimeout(type, 100);
                 } else {
                     // Animation complete, ensure full visibility
                     textElement.style.width = 'auto';
                     textElement.style.overflow = 'visible';
+                    textElement.style.whiteSpace = 'normal';
                 }
             }
             
