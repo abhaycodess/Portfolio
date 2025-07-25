@@ -26,6 +26,9 @@
                     <a href="#projects" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#photography" class="nav-link">Photography</a>
+                </li>
+                <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
                 <li class="nav-item">
@@ -218,6 +221,45 @@
         </div>
     </section>
 
+    <!-- Photography Section -->
+    <section id="photography" class="photography">
+        <div class="container">
+            <h2 class="section-title">Creative Vision</h2>
+            <p class="photography-subtitle">Beyond code, I capture moments through the lens</p>
+            
+            <div class="slideshow-container">
+                <div class="slideshow">
+                    <div class="slide active">
+                        <img src="attached_assets/WhatsApp Image 2025-03-07 at 11.12.40_71c3b83a_1753457268255.jpg" alt="Photography Sample 1" loading="lazy">
+                    </div>
+                    <!-- Additional slides will be added here -->
+                </div>
+                
+                <div class="slideshow-controls">
+                    <button class="slide-btn prev-btn" onclick="changeSlide(-1)">
+                        <i data-feather="chevron-left"></i>
+                    </button>
+                    <div class="slide-indicators">
+                        <span class="indicator active" onclick="currentSlide(1)"></span>
+                        <!-- Additional indicators will be added here -->
+                    </div>
+                    <button class="slide-btn next-btn" onclick="changeSlide(1)">
+                        <i data-feather="chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="slide-counter">
+                    <span class="current-slide">1</span> / <span class="total-slides">22</span>
+                </div>
+            </div>
+            
+            <div class="photography-description">
+                <p>Photography allows me to combine technical precision with artistic vision, much like programming. 
+                Each frame tells a story, capturing fleeting moments and transforming them into lasting memories.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -283,6 +325,45 @@
 
         // Initialize typing animation when page loads
         window.addEventListener('load', typeWriter);
+
+        // Slideshow functionality
+        let currentSlideIndex = 1;
+        const totalSlideCount = 22;
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            const indicators = document.querySelectorAll('.indicator');
+            
+            if (n > totalSlideCount) currentSlideIndex = 1;
+            if (n < 1) currentSlideIndex = totalSlideCount;
+            
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            if (slides[currentSlideIndex - 1]) {
+                slides[currentSlideIndex - 1].classList.add('active');
+            }
+            if (indicators[currentSlideIndex - 1]) {
+                indicators[currentSlideIndex - 1].classList.add('active');
+            }
+            
+            document.querySelector('.current-slide').textContent = currentSlideIndex;
+        }
+
+        function changeSlide(n) {
+            currentSlideIndex += n;
+            showSlide(currentSlideIndex);
+        }
+
+        function currentSlide(n) {
+            currentSlideIndex = n;
+            showSlide(currentSlideIndex);
+        }
+
+        // Auto-advance slideshow (optional)
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000); // Change slide every 5 seconds
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
