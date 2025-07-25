@@ -96,6 +96,7 @@ body {
 
 .nav-link:hover {
     color: var(--accent-primary);
+    transform: translateY(-1px);
 }
 
 .nav-link::after {
@@ -647,7 +648,7 @@ body {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px var(--shadow-heavy);
+    box-shadow: 0 6px 20px var(--shadow-heavy), var(--glow-primary);
 }
 
 .btn-secondary {
@@ -661,6 +662,7 @@ body {
     color: var(--accent-primary);
     border-color: var(--accent-primary);
     transform: translateY(-2px);
+    box-shadow: 0 4px 15px var(--shadow-light);
 }
 
 /* Contact Section */
