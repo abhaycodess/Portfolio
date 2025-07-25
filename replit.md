@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern, single-page personal portfolio website for Abhay Raj Dwivedi, a B.Tech Computer Science student specializing in Data Science at Maharana Pratap Group of Institutions, Kanpur. The site features a dynamic "tech geek" aesthetic with an "Amethyst Night" color theme, enhanced with animated tech elements, floating icons, and interactive visual effects. The website showcases Abhay's skills in data science, machine learning, and creative development.
+This is a modern, single-page personal portfolio website for Abhay Raj Dwivedi, a B.Tech Computer Science student specializing in Data Science at Maharana Pratap Engineering College, Kanpur. The site features a dynamic "tech geek" aesthetic with an "Amethyst Night" color theme, enhanced with animated tech elements, floating icons, and interactive visual effects. The website showcases Abhay's expertise in Java, Python, C/C++, and his creative background in filmmaking and photography.
 
 ## User Preferences
 
