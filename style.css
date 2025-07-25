@@ -215,12 +215,12 @@ body {
     animation-delay: var(--delay);
 }
 
-.tech-icon:nth-child(1) { top: 20%; left: 10%; }
-.tech-icon:nth-child(2) { top: 60%; left: 85%; }
-.tech-icon:nth-child(3) { top: 30%; left: 80%; }
-.tech-icon:nth-child(4) { top: 70%; left: 15%; }
-.tech-icon:nth-child(5) { top: 15%; left: 70%; }
-.tech-icon:nth-child(6) { top: 80%; left: 60%; }
+.tech-icon:nth-child(1) { top: 20%; left: 8%; }
+.tech-icon:nth-child(2) { top: 35%; left: 85%; }
+.tech-icon:nth-child(3) { top: 65%; left: 12%; }
+.tech-icon:nth-child(4) { top: 75%; left: 88%; }
+.tech-icon:nth-child(5) { top: 15%; left: 82%; }
+.tech-icon:nth-child(6) { top: 85%; left: 15%; }
 
 .circuit-pattern {
     position: absolute;
