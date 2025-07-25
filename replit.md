@@ -1,8 +1,8 @@
-# Personal Portfolio Website
+# Personal Portfolio Website - Abhay Raj Dwivedi
 
 ## Overview
 
-This is a modern, single-page personal portfolio website designed for a final-year B.Tech Computer Science student. The site features a clean "minimal tech geek" aesthetic with an "Amethyst Night" color theme, combining deep dark indigo backgrounds with vibrant purple accents. The website is fully responsive and designed to showcase the student's skills, projects, and contact information in a professional manner.
+This is a modern, single-page personal portfolio website for Abhay Raj Dwivedi, a B.Tech Computer Science student specializing in Data Science at Maharana Pratap Group of Institutions, Kanpur. The site features a dynamic "tech geek" aesthetic with an "Amethyst Night" color theme, enhanced with animated tech elements, floating icons, and interactive visual effects. The website showcases Abhay's skills in data science, machine learning, and creative development.
 
 ## User Preferences
 
@@ -17,11 +17,11 @@ Preferred communication style: Simple, everyday language.
 - **Modern CSS**: Utilizes CSS custom properties (variables) and modern features like backdrop-filter
 
 ### Technology Stack
-- **HTML5**: Semantic markup structure
-- **CSS3**: Modern styling with custom properties and advanced effects
-- **Vanilla JavaScript**: Minimal JavaScript for enhanced interactivity (Feather Icons)
-- **Google Fonts**: Inter font family for typography
-- **Feather Icons**: Lightweight icon library loaded via CDN
+- **HTML5**: Semantic markup structure with dynamic content
+- **CSS3**: Advanced styling with animations, custom properties, and tech-themed effects
+- **Vanilla JavaScript**: Interactive typing animation, smooth scrolling, mobile navigation
+- **Google Fonts**: Inter for body text, JetBrains Mono/Fira Code for tech headings
+- **Feather Icons**: Comprehensive icon library for tech and contact elements
 
 ## Key Components
 
@@ -32,11 +32,11 @@ Preferred communication style: Simple, everyday language.
 - Highlighted resume button for emphasis
 
 ### Content Sections
-1. **Hero Section**: Introduction with name, tagline, and call-to-action
-2. **About Section**: Professional photo placeholder, bio, and skill badges
-3. **Projects Section**: Grid layout showcasing 3 project cards with hover effects
-4. **Contact Section**: Social media and contact links with large clickable icons
-5. **Footer**: Simple branding and copyright information
+1. **Hero Section**: Animated typing name, dynamic tech backgrounds, floating tech icons, and call-to-action
+2. **About Section**: Professional bio, comprehensive technical skills, core strengths, with tech grid background
+3. **Projects Section**: Real project showcase including Movie Recommendation System, Speech Emotion Recognition, and Library Management System with binary rain animation
+4. **Contact Section**: Direct contact links including email, GitHub, LinkedIn, and phone with interactive icons
+5. **Footer**: Personal branding with Abhay's name and copyright
 
 ### Design System
 - **Color Palette**: Amethyst Night theme with CSS custom properties

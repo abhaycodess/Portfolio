@@ -11,6 +11,7 @@
     --shadow-heavy: rgba(139, 92, 246, 0.4);
     --gradient-primary: linear-gradient(135deg, var(--accent-primary), #a855f7);
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-tech: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
     --glow-primary: 0 0 20px rgba(139, 92, 246, 0.5);
     --glow-secondary: 0 0 40px rgba(139, 92, 246, 0.3);
 }
@@ -287,11 +288,31 @@ body {
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 1rem;
+    font-family: var(--font-tech);
+    letter-spacing: -0.02em;
+    animation: fadeInUp 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.typing-text {
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: fadeInUp 0.8s ease;
+    overflow: hidden;
+    border-right: 0.15em solid transparent;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end) 0.5s both;
+}
+
+.cursor {
+    color: var(--accent-primary);
+    animation: blink 1s infinite;
+    font-weight: 400;
 }
 
 .hero-tagline {
@@ -336,6 +357,8 @@ body {
     text-align: center;
     margin-bottom: 4rem;
     position: relative;
+    font-family: var(--font-tech);
+    letter-spacing: -0.01em;
 }
 
 .section-title::after {
@@ -548,6 +571,8 @@ body {
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 1rem;
+    font-family: var(--font-tech);
+    letter-spacing: -0.01em;
 }
 
 .project-description {
@@ -735,6 +760,24 @@ body {
 @keyframes binaryFall {
     0% { transform: translateY(-100%); }
     100% { transform: translateY(100%); }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
 }
 
 /* Responsive Design */

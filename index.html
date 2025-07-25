@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Abhay Raj Dwivedi - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -28,7 +29,7 @@
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#resume" class="nav-link resume-btn">My Resume</a>
+                    <a href="mailto:abhayrajdwivedi293@gmail.com?subject=Resume%20Request&body=Hello%20Abhay,%20I%20would%20like%20to%20request%20your%20resume." class="nav-link resume-btn">My Resume</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -55,9 +56,12 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-name">Your Name</h1>
-                <p class="hero-tagline">Final Year B.Tech Student | Aspiring Developer</p>
-                <p class="hero-subtitle">Computer Science Engineering at MPGI, Kanpur</p>
+                <h1 class="hero-name">
+                    <span class="typing-text" data-text="Abhay Raj Dwivedi"></span>
+                    <span class="cursor">|</span>
+                </h1>
+                <p class="hero-tagline">B.Tech CS Student | Data Science Enthusiast | Creative Developer</p>
+                <p class="hero-subtitle">Maharana Pratap Group of Institutions, Kanpur</p>
                 <a href="#projects" class="cta-button">View My Work</a>
             </div>
         </div>
@@ -76,22 +80,36 @@
                 </div>
                 <div class="about-text">
                     <p class="about-description">
-                        I'm a passionate Computer Science student in my final year at MPGI, Kanpur. 
-                        I love creating innovative solutions and exploring new technologies. 
-                        My journey in programming has been driven by curiosity and a desire to build 
-                        meaningful applications that can make a difference.
+                        Motivated and versatile Computer Science undergraduate with a strong academic foundation 
+                        and a keen interest in data science and AI. I specialize in Python, machine learning, 
+                        and data visualization, complemented by a creative background in filmmaking and photography. 
+                        I bring a unique combination of analytical thinking and visual storytelling, allowing me to 
+                        approach problems with both logic and creativity.
                     </p>
                     <div class="skills">
                         <h3 class="skills-title">Technical Skills</h3>
                         <div class="skill-badges">
-                            <span class="skill-badge">Java</span>
                             <span class="skill-badge">Python</span>
-                            <span class="skill-badge">React</span>
+                            <span class="skill-badge">C/C++</span>
                             <span class="skill-badge">SQL</span>
-                            <span class="skill-badge">JavaScript</span>
-                            <span class="skill-badge">Node.js</span>
-                            <span class="skill-badge">HTML/CSS</span>
+                            <span class="skill-badge">Pandas</span>
+                            <span class="skill-badge">Matplotlib</span>
+                            <span class="skill-badge">NumPy</span>
+                            <span class="skill-badge">Scikit-learn</span>
+                            <span class="skill-badge">TensorFlow</span>
+                            <span class="skill-badge">LSTM</span>
                             <span class="skill-badge">Git</span>
+                            <span class="skill-badge">Jupyter</span>
+                            <span class="skill-badge">Adobe Premiere</span>
+                        </div>
+                    </div>
+                    <div class="core-strengths">
+                        <h3 class="skills-title">Core Strengths</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Keen Observer</span>
+                            <span class="skill-badge">Multitasking</span>
+                            <span class="skill-badge">Orator Skills</span>
+                            <span class="skill-badge">Persuasive Skills</span>
                         </div>
                     </div>
                 </div>
@@ -105,54 +123,25 @@
         <div class="container">
             <h2 class="section-title">My Projects</h2>
             <div class="projects-grid">
-                <!-- Project 1 -->
+                <!-- Project 1: Movie Recommendation System -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="image-placeholder">
-                            <i data-feather="code"></i>
+                            <i data-feather="film"></i>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Project Title 1</h3>
+                        <h3 class="project-title">Movie Recommendation System</h3>
                         <p class="project-description">
-                            A comprehensive description of your first project. Explain the problem it solves 
-                            and the key features that make it unique and valuable.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-badge">React</span>
-                            <span class="tech-badge">Node.js</span>
-                            <span class="tech-badge">MongoDB</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="#" class="btn-secondary">
-                                <i data-feather="github"></i>
-                                GitHub
-                            </a>
-                            <a href="#" class="btn-primary">
-                                <i data-feather="external-link"></i>
-                                Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i data-feather="database"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Project Title 2</h3>
-                        <p class="project-description">
-                            A detailed description of your second project. Highlight the technologies used 
-                            and the impact it has on solving real-world problems.
+                            Built a collaborative filtering movie recommendation system with a team of four. 
+                            Implemented machine learning algorithms to provide personalized movie suggestions 
+                            based on user preferences and viewing history.
                         </p>
                         <div class="project-tech">
                             <span class="tech-badge">Python</span>
-                            <span class="tech-badge">Django</span>
-                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">Scikit-learn</span>
+                            <span class="tech-badge">Pandas</span>
+                            <span class="tech-badge">Matplotlib</span>
                         </div>
                         <div class="project-buttons">
                             <a href="#" class="btn-secondary">
@@ -167,23 +156,58 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- Project 2: Speech Emotion Recognition -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="image-placeholder">
-                            <i data-feather="smartphone"></i>
+                            <i data-feather="mic"></i>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Project Title 3</h3>
+                        <h3 class="project-title">Speech Emotion Recognition</h3>
                         <p class="project-description">
-                            An engaging description of your third project. Explain the challenges you faced 
-                            and how you overcame them to deliver a successful solution.
+                            Developed a web-based application using LSTM neural networks to classify emotions 
+                            from speech audio. The system analyzes voice patterns and tone to detect emotional 
+                            states with high accuracy using deep learning techniques.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-badge">Java</span>
-                            <span class="tech-badge">Spring Boot</span>
-                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">TensorFlow</span>
+                            <span class="tech-badge">LSTM</span>
+                            <span class="tech-badge">Flask</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn-secondary">
+                                <i data-feather="github"></i>
+                                GitHub
+                            </a>
+                            <a href="#" class="btn-primary">
+                                <i data-feather="external-link"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Library Management System -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i data-feather="book-open"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Library Management System</h3>
+                        <p class="project-description">
+                            Created a comprehensive library management system using C and C++ with structured 
+                            programming principles. Features include book cataloging, member management, 
+                            and automated borrowing/returning processes to enhance operational efficiency.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">C</span>
+                            <span class="tech-badge">C++</span>
+                            <span class="tech-badge">Data Structures</span>
+                            <span class="tech-badge">File Handling</span>
                         </div>
                         <div class="project-buttons">
                             <a href="#" class="btn-secondary">
@@ -210,14 +234,17 @@
                 Let's connect and create something amazing together!
             </p>
             <div class="contact-icons">
-                <a href="mailto:your.email@example.com" class="contact-icon" title="Email">
+                <a href="mailto:abhayrajdwivedi293@gmail.com" class="contact-icon" title="Email">
                     <i data-feather="mail"></i>
                 </a>
-                <a href="https://github.com/yourusername" class="contact-icon" title="GitHub" target="_blank">
+                <a href="https://github.com/abhayrajdwivedi" class="contact-icon" title="GitHub" target="_blank">
                     <i data-feather="github"></i>
                 </a>
-                <a href="https://linkedin.com/in/yourusername" class="contact-icon" title="LinkedIn" target="_blank">
+                <a href="https://linkedin.com/in/abhayrajdwivedi" class="contact-icon" title="LinkedIn" target="_blank">
                     <i data-feather="linkedin"></i>
+                </a>
+                <a href="tel:+916386583143" class="contact-icon" title="Phone" target="_blank">
+                    <i data-feather="phone"></i>
                 </a>
             </div>
         </div>
@@ -226,13 +253,34 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p>&copy; 2025 Abhay Raj Dwivedi. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
         // Initialize Feather Icons
         feather.replace();
+
+        // Typing animation for name
+        function typeWriter() {
+            const textElement = document.querySelector('.typing-text');
+            const text = textElement.getAttribute('data-text');
+            textElement.textContent = '';
+            
+            let i = 0;
+            function type() {
+                if (i < text.length) {
+                    textElement.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, 100);
+                }
+            }
+            
+            setTimeout(type, 1000); // Start typing after 1 second
+        }
+
+        // Initialize typing animation when page loads
+        window.addEventListener('load', typeWriter);
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
