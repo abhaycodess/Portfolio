@@ -664,33 +664,37 @@ body {
     font-style: italic;
 }
 
-/* Photo Grid Styles */
+/* ▼▼▼ CSS CHANGE START ▼▼▼ */
+/* Photo Grid Styles - UPDATED FOR MASONRY */
 .photo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+}
+
+/* This is an invisible element that sets the column width */
+.grid-sizer,
+.photo-item {
+    width: 32%; /* 3 columns on large screens */
+    margin-bottom: 10px; /* Space below photos */
 }
 
 .photo-item {
-    aspect-ratio: 1;
+    float: left; /* Essential for Masonry */
     overflow: hidden;
     border-radius: 12px;
     cursor: pointer;
     position: relative;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .photo-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.03); /* A more subtle hover effect */
+    box-shadow: 0 10px 30px var(--shadow-heavy);
 }
 
 .photo-item img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto; /* Let the image define the height */
+    display: block; /* Removes bottom space */
     transition: transform 0.3s ease;
     border-radius: 12px;
 }
@@ -698,6 +702,8 @@ body {
 .photo-item:hover img {
     transform: scale(1.1);
 }
+/* ▲▲▲ CSS CHANGE END ▲▲▲ */
+
 
 .photography-description {
     text-align: center;
@@ -888,11 +894,18 @@ body {
     font-size: 0.9rem;
 }
 
-/* Responsive Design for Photo Grid */
+/* ▼▼▼ CSS CHANGE START ▼▼▼ */
+/* Responsive Design for Photo Grid - UPDATED */
+@media (max-width: 992px) {
+    .grid-sizer,
+    .photo-item {
+        width: 48%; /* 2 columns on medium screens */
+    }
+}
+
 @media (max-width: 768px) {
     .photo-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
+        /* No change needed here for masonry, but keeping other mobile styles */
     }
     
     .lightbox-controls {
@@ -912,17 +925,20 @@ body {
     }
 }
 
-@media (max-width: 480px) {
-    .photo-grid {
-        grid-template-columns: 1fr;
+@media (max-width: 576px) {
+    .grid-sizer,
+    .photo-item {
+        width: 100%; /* 1 column on small screens */
     }
     
     .lightbox-content {
         padding: 1rem;
     }
 }
+/* ▲▲▲ CSS CHANGE END ▲▲▲ */
 
-/* Mobile Responsive */
+
+/* General Mobile Responsive */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
