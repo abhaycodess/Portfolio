@@ -10,7 +10,7 @@
     --shadow-light: rgba(139, 92, 246, 0.2);
     --shadow-heavy: rgba(139, 92, 246, 0.4);
     --gradient-primary: linear-gradient(135deg, var(--accent-primary), #a855f7);
-    --font-family: 'Noto Serif', serif;
+    --font-family: 'Noto Serif', 'serif';
     --font-tech: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
     --glow-primary: 0 0 20px rgba(139, 92, 246, 0.5);
     --glow-secondary: 0 0 40px rgba(139, 92, 246, 0.3);
@@ -847,7 +847,6 @@ body {
     transition: all 0.3s ease;
     border: 2px solid var(--border-color);
     position: relative;
-    overflow: hidden;
 }
 
 .contact-icon::before {
