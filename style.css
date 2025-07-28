@@ -159,7 +159,6 @@ body {
 }
 
 /* Hero Section - UPDATED */
-/* Hero Section */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -264,7 +263,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-
 
 /* Section Titles */
 .section-title {
