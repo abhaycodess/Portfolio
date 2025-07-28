@@ -374,33 +374,24 @@
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
     <script>
-    // Typing animation for name
+   // Typing animation for name
     function typeWriter() {
         const text = "Abhay Raj Dwivedi";
-        const textElement = document.getElementById("typing-name");
+        // Target the new h2 element
+        const textElement = document.getElementById("animated-name");
 
-        if (!textElement) return; // Stop if element doesn't exist
-
-        textElement.textContent = '';
-        textElement.style.width = '0';
-        textElement.style.borderRight = '3px solid var(--accent-primary)';
-        textElement.style.whiteSpace = 'nowrap';
-        textElement.style.overflow = 'hidden';
+        if (!textElement) return;
 
         let i = 0;
         function type() {
             if (i < text.length) {
                 textElement.textContent += text.charAt(i);
                 i++;
-                setTimeout(type, 100);
-            } else {
-                // Keep the cursor blinking
-                textElement.style.animation = 'blink-caret 1s step-end infinite';
+                setTimeout(type, 120); // Typing speed
             }
         }
-        setTimeout(type, 1500);
+        setTimeout(type, 1500); // Delay before typing starts
     }
-
     // Photography lightbox functionality
     const photoImages = [
         'Photos-1-001/IMG_20250115_154800.jpg', 'Photos-1-001/IMG_20250128_163725.jpg',
