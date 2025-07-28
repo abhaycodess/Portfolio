@@ -179,24 +179,24 @@ body {
 }
 
 .hero-title {
+    font-size: clamp(2rem, 4vw, 3rem); /* Adjusted size for "Hello, I'm" */
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.hero-name {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 1rem;
-    line-height: 1.2;
-}
-
-.name-highlight {
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     display: inline-block;
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: var(--accent-primary); }
+    min-height: 58px; /* Prevents layout shift during animation */
 }
 
 .hero-subtitle {
@@ -249,7 +249,6 @@ body {
     color: var(--accent-primary);
 }
 
-/* Apply individual animation delays from the HTML */
 .floating-icons .icon {
     animation-delay: var(--delay, 0s);
     animation-duration: var(--duration, 10s);
@@ -261,8 +260,6 @@ body {
     50% { transform: translateY(-10px) rotate(-5deg); }
     75% { transform: translateY(-15px) rotate(3deg); }
 }
-
-
 /* Section Titles */
 .section-title {
     font-size: clamp(2.5rem, 4vw, 3.5rem);
