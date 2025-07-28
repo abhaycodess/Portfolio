@@ -467,10 +467,18 @@ body {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* Default to 1 column on smaller screens */
+    grid-template-columns: 1fr;
     gap: 3rem;
     position: relative;
     z-index: 2;
+}
+
+/* For screens wider than 992px, use 3 columns */
+@media (min-width: 992px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .project-card {
