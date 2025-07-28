@@ -45,41 +45,13 @@
     </nav>
 
     <section id="home" class="hero">
-        <div class="tech-background"></div>
-        <div class="floating-icons">
-            <div class="icon" style="--delay: 0s; --duration: 8s;">
-                <i data-feather="cpu"></i>
-            </div>
-            <div class="icon" style="--delay: 2s; --duration: 10s;">
-                <i data-feather="code"></i>
-            </div>
-            <div class="icon" style="--delay: 4s; --duration: 9s;">
-                <i data-feather="database"></i>
-            </div>
-            <div class="icon" style="--delay: 1s; --duration: 11s;">
-                <i data-feather="terminal"></i>
-            </div>
-            <div class="icon" style="--delay: 3s; --duration: 7s;">
-                <i data-feather="server"></i>
-            </div>
-            <div class="icon" style="--delay: 5s; --duration: 12s;">
-                <i data-feather="cloud"></i>
-            </div>
-        </div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hello, I'm <span id="typing-name" class="name-highlight"></span>
-                </h1>
-                <p class="hero-subtitle">B.Tech Computer Science Student | Data Science Enthusiast</p>
-                <p class="hero-description">
-                    Passionate about crafting intelligent solutions through code and capturing life's moments through the lens.
-                    Specializing in Java, Python, and C/C++ development with a creative eye for filmmaking and photography.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn-primary">View My Work</a>
-                    <a href="#contact" class="btn-secondary">Get In Touch</a>
-                </div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hello there! I am</p>
+            <h1 class="hero-title">Abhay Raj Dwivedi</h1>
+            <p class="hero-subtitle">B.Tech CS | Data Science | Creative Dev</p>
+            <p class="hero-college">Maharana Pratap Engineering College, Kanpur</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View My Work</a>
             </div>
         </div>
     </section>
@@ -96,8 +68,8 @@
                             <h3>Abhay Raj Dwivedi</h3>
                             <p class="about-subtitle">B.Tech Computer Science | Maharana Pratap Engineering College, Kanpur</p>
                             <p class="about-description">
-                                I'm a passionate computer science student with a deep love for programming and technology. 
-                                My journey spans from developing sophisticated algorithms to capturing beautiful moments through photography. 
+                                I'm a passionate computer science student with a deep love for programming and technology.
+                                My journey spans from developing sophisticated algorithms to capturing beautiful moments through photography.
                                 I believe in the power of code to solve real-world problems and the art of storytelling through visual media.
                             </p>
                         </div>
@@ -180,7 +152,7 @@
                     <div class="project-content">
                         <h3 class="project-title">Movie Recommendation System</h3>
                         <p class="project-description">
-                            As part of a four-member team, we developed a recommendation system that analyzes user 
+                            As part of a four-member team, we developed a recommendation system that analyzes user
                             ratings and viewing data to provide personalized movie suggestions tailored to individual tastes.
                         </p>
                         <div class="project-tech">
@@ -208,7 +180,7 @@
                     <div class="project-content">
                         <h3 class="project-title">Speech Emotion Recognition</h3>
                         <p class="project-description">
-                            Developed a machine learning model in Python that analyzes vocal features from audio 
+                            Developed a machine learning model in Python that analyzes vocal features from audio
                             signals to classify human emotions such as happiness, sadness, and anger.
                         </p>
                         <div class="project-tech">
@@ -264,7 +236,7 @@
             <p class="photography-subtitle">Beyond code, I capture moments through the lens</p>
 
             <div class="photo-grid" id="photo-grid">
-                 <div class="grid-sizer"></div>
+                <div class="grid-sizer"></div>
                 <div class="photo-item" onclick="openLightbox(0)">
                     <img src="Photos-1-001/IMG_20250115_154800.jpg" alt="Photography 1" loading="lazy">
                 </div>
@@ -332,6 +304,7 @@
                     <img src="Photos-1-001/IMG_20250630_153238.jpg" alt="Photography 22" loading="lazy">
                 </div>
             </div>
+
             <div id="lightbox" class="lightbox">
                 <div class="lightbox-content">
                     <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
@@ -361,7 +334,7 @@
         <div class="container">
             <h2 class="section-title">Let's Connect</h2>
             <p class="contact-description">
-                Ready to collaborate on exciting projects or discuss opportunities in technology and creative fields? 
+                Ready to collaborate on exciting projects or discuss opportunities in technology and creative fields?
                 I'd love to hear from you. Let's build something amazing together.
             </p>
             <div class="contact-icons">
@@ -391,33 +364,6 @@
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
     <script>
-    // (Your existing JavaScript remains here)
-
-    // Typing animation, lightbox functions, etc. are unchanged
-    function typeWriter() {
-        const text = "Abhay Raj Dwivedi";
-        const textElement = document.getElementById("typing-name");
-
-        textElement.textContent = '';
-        textElement.style.width = '0';
-        textElement.style.borderRight = 'none';
-
-        let i = 0;
-        function type() {
-            if (i < text.length) {
-                textElement.textContent += text.charAt(i);
-                textElement.style.width = (i + 1) * 0.6 + 'em';
-                i++;
-                setTimeout(type, 100);
-            } else {
-                textElement.style.width = 'auto';
-                textElement.style.overflow = 'visible';
-                textElement.style.whiteSpace = 'normal';
-            }
-        }
-        setTimeout(type, 1500);
-    }
-
     const photoImages = [
         'Photos-1-001/IMG_20250115_154800.jpg', 'Photos-1-001/IMG_20250128_163725.jpg',
         'Photos-1-001/IMG_20250128_164325.jpg', 'Photos-1-001/IMG_20250128_164350.jpg',
@@ -504,16 +450,15 @@
 
     // Initialize scripts when page loads
     window.addEventListener('load', () => {
-        typeWriter();
-        feather.replace(); // This needs to be called after new icons are added
+        feather.replace(); // Initialize feather icons
 
-        // NEW SCRIPT to initialize Masonry
+        // Initialize Masonry for the photo grid
         var grid = document.querySelector('#photo-grid');
         var msnry = new Masonry( grid, {
             itemSelector: '.photo-item',
             columnWidth: '.grid-sizer',
             percentPosition: true,
-            gutter: 10 // This is the space between photos
+            gutter: 10
         });
 
         // Layout after all images have loaded
@@ -521,7 +466,7 @@
             msnry.layout();
         });
     });
-
     </script>
-    </body>
+</body>
+
 </html>
