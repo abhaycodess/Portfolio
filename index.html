@@ -44,21 +44,32 @@
         </div>
     </nav>
 
-<section id="home" class="hero minimal-techy">
-    <div class="hero-content">
-        <h1>Protect your digital world</h1>
-        <p class="hero-subtitle">Cutting-edge solutions for a secure tomorrow.</p>
-        <div class="hero-actions">
-            <input type="email" placeholder="Enter your email">
-            <button class="btn-primary">Get Started</button>
+    <section id="home" class="hero">
+        <div class="floating-icons left">
+            <div class="icon" style="--delay: 0s; --duration: 8s;"><i data-feather="cpu"></i></div>
+            <div class="icon" style="--delay: 2s; --duration: 10s;"><i data-feather="code"></i></div>
+            <div class="icon" style="--delay: 4s; --duration: 9s;"><i data-feather="database"></i></div>
         </div>
-    </div>
-    <div class="hero-graphics">
-        <div class="tech-shape shape-1"></div>
-        <div class="tech-shape shape-2"></div>
-        <div class="tech-shape shape-3"></div>
-    </div>
-</section>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Hello, I'm <span id="typing-name" class="name-highlight"></span>
+            </h1>
+            <p class="hero-subtitle">B.Tech Computer Science | Data Science & Creative Development</p>
+            <p class="hero-description">
+                Passionate about leveraging technology to build innovative solutions and express creativity through code and visuals.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="floating-icons right">
+            <div class="icon" style="--delay: 1s; --duration: 11s;"><i data-feather="terminal"></i></div>
+            <div class="icon" style="--delay: 3s; --duration: 7s;"><i data-feather="server"></i></div>
+            <div class="icon" style="--delay: 5s; --duration: 12s;"><i data-feather="cloud"></i></div>
+        </div>
+    </section>
+
     <section id="about" class="about">
         <div class="tech-grid"></div>
         <div class="container">
@@ -173,7 +184,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card">
                     <div class="project-image">
                         <div class="image-placeholder">
@@ -201,7 +211,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="project-card">
                     <div class="project-image">
                         <div class="image-placeholder">
@@ -367,6 +376,34 @@
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
     <script>
+    // Typing animation for name
+    function typeWriter() {
+        const text = "Abhay Raj Dwivedi";
+        const textElement = document.getElementById("typing-name");
+
+        if (!textElement) return; // Stop if element doesn't exist
+
+        textElement.textContent = '';
+        textElement.style.width = '0';
+        textElement.style.borderRight = '3px solid var(--accent-primary)';
+        textElement.style.whiteSpace = 'nowrap';
+        textElement.style.overflow = 'hidden';
+
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                textElement.textContent += text.charAt(i);
+                i++;
+                setTimeout(type, 100);
+            } else {
+                // Keep the cursor blinking
+                textElement.style.animation = 'blink-caret 1s step-end infinite';
+            }
+        }
+        setTimeout(type, 1500);
+    }
+
+    // Photography lightbox functionality
     const photoImages = [
         'Photos-1-001/IMG_20250115_154800.jpg', 'Photos-1-001/IMG_20250128_163725.jpg',
         'Photos-1-001/IMG_20250128_164325.jpg', 'Photos-1-001/IMG_20250128_164350.jpg',
@@ -453,21 +490,23 @@
 
     // Initialize scripts when page loads
     window.addEventListener('load', () => {
+        typeWriter(); // Call the typing function
         feather.replace(); // Initialize feather icons
 
         // Initialize Masonry for the photo grid
         var grid = document.querySelector('#photo-grid');
-        var msnry = new Masonry( grid, {
-            itemSelector: '.photo-item',
-            columnWidth: '.grid-sizer',
-            percentPosition: true,
-            gutter: 10
-        });
-
-        // Layout after all images have loaded
-        imagesLoaded( grid ).on( 'progress', function() {
-            msnry.layout();
-        });
+        if (grid) { // Check if the grid exists before initializing
+            var msnry = new Masonry( grid, {
+                itemSelector: '.photo-item',
+                columnWidth: '.grid-sizer',
+                percentPosition: true,
+                gutter: 10
+            });
+            // Layout after all images have loaded
+            imagesLoaded( grid ).on( 'progress', function() {
+                msnry.layout();
+            });
+        }
     });
     </script>
 </body>
