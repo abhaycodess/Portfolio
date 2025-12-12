@@ -857,18 +857,18 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--gradient-primary);
-    transform: scale(0);
-    transition: transform 0.3s ease;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.15));
+    opacity: 0;
+    transition: opacity 0.3s ease;
     border-radius: 50%;
 }
 
 .contact-icon:hover::before {
-    transform: scale(1);
+    opacity: 1;
 }
 
 .contact-icon:hover {
-    color: var(--text-primary);
+    color: var(--accent-primary);
     transform: translateY(-5px);
     box-shadow: var(--glow-primary);
     border-color: var(--accent-primary);
