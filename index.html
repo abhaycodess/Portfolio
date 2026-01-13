@@ -24,7 +24,7 @@
                     <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#featured-project" class="nav-link">Featured</a>
                 </li>
                 <li class="nav-item">
                     <a href="#photography" class="nav-link">Photography</a>
@@ -32,8 +32,17 @@
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
+                <li class="nav-item resume-dropdown">
+                    <a href="#" class="nav-link resume-btn">Resume <i data-feather="chevron-down" class="dropdown-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="assets/resume.pdf" target="_blank">Tech Resume</a></li>
+                        <li><a href="assets/non-tech-resume.pdf" target="_blank">Non-Tech Resume</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item">
-                    <a href="assets/resume.pdf" class="nav-link resume-btn" target="_blank">Resume</a>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <i data-feather="sun" class="theme-icon"></i>
+                    </button>
                 </li>
             </ul>
             <div class="hamburger">
@@ -45,195 +54,195 @@
     </nav>
 
   <section id="home" class="hero">
-        <div class="floating-icons left">
-            <div class="icon" style="--delay: 0s; --duration: 8s;"><i data-feather="cpu"></i></div>
-            <div class="icon" style="--delay: 2s; --duration: 10s;"><i data-feather="code"></i></div>
-            <div class="icon" style="--delay: 4s; --duration: 9s;"><i data-feather="database"></i></div>
-        </div>
-        <div class="hero-content">
-            <h1 class="hero-title">Hello, I'm</h1>
-            <h2 id="animated-name" class="hero-name"></h2> <p class="hero-subtitle">B.Tech Computer Science | Data Science & Creative Development</p>
-            <p class="hero-description">
-                Passionate about leveraging technology to build innovative solutions and express creativity through code and visuals.
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn-primary">View My Work</a>
-                <a href="#contact" class="btn-secondary">Get In Touch</a>
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-tagline">Welcome folks,</h1>
+                    <h1 class="hero-subtitle">This is</h1>
+                    <h2 id="animated-name" class="hero-name"></h2>
+                    <div class="hero-role">
+                        <span class="role-text">Creative Developer & Photographer</span>
+                    </div>
+                    <p class="hero-statement">He builds elegant digital experiences with code and captures life through the lens</p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn-primary">View Projects</a>
+                        <a href="#contact" class="btn-secondary">Contact Him</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="floating-icons right">
-            <div class="icon" style="--delay: 1s; --duration: 11s;"><i data-feather="terminal"></i></div>
-            <div class="icon" style="--delay: 3s; --duration: 7s;"><i data-feather="server"></i></div>
-            <div class="icon" style="--delay: 5s; --duration: 12s;"><i data-feather="cloud"></i></div>
+            <div class="hero-visual">
+                <div class="hero-illustration">
+                    <div class="illustration-circle profile-image-container">
+                        <img src="profile-photo.jpg" alt="Abhay Raj Dwivedi Profile">
+                    </div>
+                    <div class="illustration-accent"></div>
+                    <div class="illustration-dots"></div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="about" class="about">
-        <div class="tech-grid"></div>
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="about-intro">
-                        <img src="profile-photo.jpg" alt="Abhay Raj Dwivedi" class="profile-photo">
-                        <div class="intro-text">
-                            <h3>Abhay Raj Dwivedi</h3>
-                            <p class="about-subtitle">B.Tech Computer Science | Maharana Pratap Engineering College, Kanpur</p>
-                            <p class="about-description">
-                                I'm a passionate computer science student with a deep love for programming and technology.
-                                My journey spans from developing sophisticated algorithms to capturing beautiful moments through photography.
-                                I believe in the power of code to solve real-world problems and the art of storytelling through visual media.
-                            </p>
+            <h2 class="section-title">About Him</h2>
+            <div class="about-cards">
+                <div class="about-card who-i-am">
+                    <div class="card-icon"><i data-feather="user"></i></div>
+                    <h3>Who He Is</h3>
+                    <p>Abhay Raj Dwivedi</p>
+                    <p class="card-subtitle">B.Tech Computer Science | Maharana Pratap Engineering College, Kanpur</p>
+                    <p class="card-description">
+                        A passionate computer science student blending technical expertise with creative vision. 
+                        He transforms complex problems into elegant solutions and captures moments that inspire.
+                    </p>
+                </div>
+                
+                <div class="about-card tech-stack">
+                    <div class="card-icon"><i data-feather="code"></i></div>
+                    <h3>Tech Stack</h3>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <h4>Languages</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">C/C++</span>
+                                <span class="skill-tag">JavaScript</span>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="skills-section">
-                        <h4>Technical Skills</h4>
-                        <div class="skills-grid">
-                            <div class="skill-category">
-                                <h5><i data-feather="code"></i> Programming Languages</h5>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">Java</span>
-                                    <span class="skill-tag">Python</span>
-                                    <span class="skill-tag">C/C++</span>
-                                    <span class="skill-tag">JavaScript</span>
-                                </div>
+                        <div class="tech-item">
+                            <h4>Data Science</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">ML</span>
+                                <span class="skill-tag">Analytics</span>
+                                <span class="skill-tag">Modeling</span>
                             </div>
-                            <div class="skill-category">
-                                <h5><i data-feather="database"></i> Data Science</h5>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">Machine Learning</span>
-                                    <span class="skill-tag">Data Analysis</span>
-                                    <span class="skill-tag">Statistical Modeling</span>
-                                    <span class="skill-tag">Python Libraries</span>
-                                </div>
-                            </div>
-                            <div class="skill-category">
-                                <h5><i data-feather="camera"></i> Creative Skills</h5>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">Photography</span>
-                                    <span class="skill-tag">Filmmaking</span>
-                                    <span class="skill-tag">Visual Storytelling</span>
-                                    <span class="skill-tag">Post-Production</span>
-                                </div>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Creative</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Photography</span>
+                                <span class="skill-tag">Filmmaking</span>
+                                <span class="skill-tag">Visual Design</span>
                             </div>
                         </div>
                     </div>
+                </div>
+                
+                <div class="about-card career-goals">
+                    <div class="card-icon"><i data-feather="target"></i></div>
+                    <h3>Career Goals</h3>
+                    <ul class="goals-list">
+                        <li><i data-feather="check-circle"></i> Master full-stack development</li>
+                        <li><i data-feather="check-circle"></i> Build innovative AI solutions</li>
+                        <li><i data-feather="check-circle"></i> Lead impactful projects</li>
+                        <li><i data-feather="check-circle"></i> Blend tech with creative storytelling</li>
+                        <li><i data-feather="check-circle"></i> Make a positive digital impact</li>
+                    </ul>
+                </div>
+            </div>
 
-                    <div class="strengths-section">
-                        <h4>Core Strengths</h4>
-                        <div class="strengths-grid">
-                            <div class="strength-item">
-                                <i data-feather="zap"></i>
-                                <h5>Problem Solving</h5>
-                                <p>Analytical thinking and systematic approach to complex challenges</p>
-                            </div>
-                            <div class="strength-item">
-                                <i data-feather="users"></i>
-                                <h5>Team Collaboration</h5>
-                                <p>Effective communication and collaborative project development</p>
-                            </div>
-                            <div class="strength-item">
-                                <i data-feather="book-open"></i>
-                                <h5>Continuous Learning</h5>
-                                <p>Passionate about staying updated with latest technologies</p>
-                            </div>
-                            <div class="strength-item">
-                                <i data-feather="eye"></i>
-                                <h5>Creative Vision</h5>
-                                <p>Unique perspective combining technical skills with artistic sensibility</p>
-                            </div>
-                        </div>
+            <div class="strengths-section">
+                <h4>Core Strengths</h4>
+                <div class="strengths-grid">
+                    <div class="strength-item">
+                        <i data-feather="zap"></i>
+                        <h5>Problem Solving</h5>
+                        <p>Analytical thinking and systematic approach to complex challenges</p>
+                    </div>
+                    <div class="strength-item">
+                        <i data-feather="users"></i>
+                        <h5>Team Collaboration</h5>
+                        <p>Effective communication and collaborative project development</p>
+                    </div>
+                    <div class="strength-item">
+                        <i data-feather="book-open"></i>
+                        <h5>Continuous Learning</h5>
+                        <p>Passionate about staying updated with latest technologies</p>
+                    </div>
+                    <div class="strength-item">
+                        <i data-feather="eye"></i>
+                        <h5>Creative Vision</h5>
+                        <p>Unique perspective combining technical skills with artistic sensibility</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="projects" class="projects">
-        <div class="binary-rain"></div>
+    <section id="featured-project" class="featured-project">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i data-feather="film"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Movie Recommendation System</h3>
-                        <p class="project-description">
-                            As part of a four-member team, we developed a recommendation system that analyzes user
-                            ratings and viewing data to provide personalized movie suggestions tailored to individual tastes.
+            <h2 class="section-title">Featured Project</h2>
+            <p class="featured-subtitle">Aegis-Cloud - A Cloud-Based Storage Platform</p>
+            
+            <div class="featured-card-wrapper">
+                <div class="featured-card">
+                    <div class="project-header">
+                        <h3 class="featured-title">Cloud Storage & File Management</h3>
+                        <p class="featured-description">
+                            Aegis-Cloud is a comprehensive cloud-based storage platform built with React and TypeScript, 
+                            featuring real-time file synchronization, secure authentication, and a modern responsive interface. 
+                            The platform leverages Supabase for backend services and Material UI for a polished user experience.
                         </p>
-                        <div class="project-tech">
-                            <span class="tech-badge">Python</span>
-                            <span class="tech-badge">Machine Learning</span>
-                            <span class="tech-badge">Data Analysis</span>
-                            <span class="tech-badge">Team Project</span>
+                    </div>
+
+                    <div class="project-body">
+                        <div class="tech-stack-showcase">
+                            <h4>Tech Stack</h4>
+                            <div class="tech-circles">
+                                <div class="tech-circle">
+                                    <i data-feather="zap"></i>
+                                    <span>React</span>
+                                </div>
+                                <div class="tech-circle">
+                                    <i data-feather="layers"></i>
+                                    <span>TypeScript</span>
+                                </div>
+                                <div class="tech-circle">
+                                    <i data-feather="wind"></i>
+                                    <span>Tailwind</span>
+                                </div>
+                                <div class="tech-circle">
+                                    <i data-feather="database"></i>
+                                    <span>Supabase</span>
+                                </div>
+                                <div class="tech-circle">
+                                    <i data-feather="box"></i>
+                                    <span>Material UI</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="project-buttons">
-                            <a href="https://github.com/abhaycodess/Movie-Recommendation-System" class="btn-primary"
-                                target="_blank" rel="noopener noreferrer">
-                                <i data-feather="github"></i>
-                                GitHub
-                            </a>
+
+                        <div class="project-details-grid">
+                            <div class="detail-item">
+                                <div class="detail-icon">
+                                    <i data-feather="code"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <h5>Key Features</h5>
+                                    <p>File upload/download, Real-time sync, User authentication, Cloud storage, Responsive design</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">
+                                    <i data-feather="target"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <h5>Technologies</h5>
+                                    <p>React 18, TypeScript, Vite, TailwindCSS, Material UI, Supabase, Routing</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i data-feather="mic"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Speech Emotion Recognition</h3>
-                        <p class="project-description">
-                            Developed a machine learning model in Python that analyzes vocal features from audio
-                            signals to classify human emotions such as happiness, sadness, and anger.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-badge">Python</span>
-                            <span class="tech-badge">Machine Learning</span>
-                            <span class="tech-badge">Audio Processing</span>
-                            <span class="tech-badge">Emotion Detection</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="https://github.com/abhaycodess/Speech-Emotion-Recognition-App" class="btn-primary"
-                                target="_blank" rel="noopener noreferrer">
-                                <i data-feather="github"></i>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i data-feather="book-open"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Library Management System</h3>
-                        <p class="project-description">
-                            A console-based Library Management System built in C to handle book inventory, member
-                            records, and book issuance/returns, utilizing file handling for data persistence.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-badge">C</span>
-                            <span class="tech-badge">File Handling</span>
-                            <span class="tech-badge">Data Structures</span>
-                            <span class="tech-badge">Console Application</span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="https://github.com/abhaycodess/Library-Management-System" class="btn-primary"
-                                target="_blank" rel="noopener noreferrer">
-                                <i data-feather="github"></i>
-                                GitHub
-                            </a>
-                        </div>
+
+                    <div class="project-footer">
+                        <a href="https://github.com/abhaycodess/4th-Year-Project" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i data-feather="github"></i>
+                            View Project on GitHub
+                        </a>
+                        <a href="projects.html" class="btn-secondary">
+                            <i data-feather="arrow-right"></i>
+                            See More Projects
+                        </a>
                     </div>
                 </div>
             </div>
@@ -247,68 +256,89 @@
 
            <div class="photo-grid" id="photo-grid">
                 <div class="grid-sizer"></div>
-                <div class="photo-item" onclick="openLightbox(0)">
+                <div class="photo-item" onclick="openLightbox(0)" data-title="Nature's Beauty">
                     <img src="Photos-1-001/IMG_20250115_154800.jpg" alt="Photography 1" loading="lazy">
+                    <div class="photo-overlay"><span>Nature's Beauty</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(1)">
+                <div class="photo-item" onclick="openLightbox(1)" data-title="Urban Landscape">
                     <img src="Photos-1-001/IMG_20250128_163725.jpg" alt="Photography 2" loading="lazy">
+                    <div class="photo-overlay"><span>Urban Landscape</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(2)">
+                <div class="photo-item" onclick="openLightbox(2)" data-title="Artistic Vision">
                     <img src="Photos-1-001/IMG_20250128_164325.jpg" alt="Photography 3" loading="lazy">
+                    <div class="photo-overlay"><span>Artistic Vision</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(3)">
+                <div class="photo-item" onclick="openLightbox(3)" data-title="Moment Captured">
                     <img src="Photos-1-001/IMG_20250128_164350.jpg" alt="Photography 4" loading="lazy">
+                    <div class="photo-overlay"><span>Moment Captured</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(4)">
+                <div class="photo-item" onclick="openLightbox(4)" data-title="Visual Story">
                     <img src="Photos-1-001/IMG_20250128_164730.jpg" alt="Photography 6" loading="lazy">
+                    <div class="photo-overlay"><span>Visual Story</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(5)">
+                <div class="photo-item" onclick="openLightbox(5)" data-title="Creative Frame">
                     <img src="Photos-1-001/IMG_20250128_164952.jpg" alt="Photography 7" loading="lazy">
+                    <div class="photo-overlay"><span>Creative Frame</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(6)">
+                <div class="photo-item" onclick="openLightbox(6)" data-title="Light & Shadow">
                     <img src="Photos-1-001/IMG_20250128_165118.jpg" alt="Photography 8" loading="lazy">
+                    <div class="photo-overlay"><span>Light & Shadow</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(7)">
+                <div class="photo-item" onclick="openLightbox(7)" data-title="Emotion Frame">
                     <img src="Photos-1-001/IMG_20250128_165653.jpg" alt="Photography 9" loading="lazy">
+                    <div class="photo-overlay"><span>Emotion Frame</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(8)">
+                <div class="photo-item" onclick="openLightbox(8)" data-title="Perspectives">
                     <img src="Photos-1-001/IMG_20250128_165916.jpg" alt="Photography 10" loading="lazy">
+                    <div class="photo-overlay"><span>Perspectives</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(9)">
+                <div class="photo-item" onclick="openLightbox(9)" data-title="Golden Hour">
                     <img src="Photos-1-001/IMG_20250128_170715.jpg" alt="Photography 11" loading="lazy">
+                    <div class="photo-overlay"><span>Golden Hour</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(10)">
+                <div class="photo-item" onclick="openLightbox(10)" data-title="Serene Moment">
                     <img src="Photos-1-001/IMG_20250128_170751.jpg" alt="Photography 12" loading="lazy">
+                    <div class="photo-overlay"><span>Serene Moment</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(11)">
+                <div class="photo-item" onclick="openLightbox(11)" data-title="Abstract Beauty">
                     <img src="Photos-1-001/IMG_20250128_170855.jpg" alt="Photography 13" loading="lazy">
+                    <div class="photo-overlay"><span>Abstract Beauty</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(12)">
+                <div class="photo-item" onclick="openLightbox(12)" data-title="Life Reflected">
                     <img src="Photos-1-001/IMG_20250128_170941.jpg" alt="Photography 14" loading="lazy">
+                    <div class="photo-overlay"><span>Life Reflected</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(13)">
+                <div class="photo-item" onclick="openLightbox(13)" data-title="Timeless View">
                     <img src="Photos-1-001/IMG_20250128_171018.jpg" alt="Photography 15" loading="lazy">
+                    <div class="photo-overlay"><span>Timeless View</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(14)">
+                <div class="photo-item" onclick="openLightbox(14)" data-title="Silent Story">
                     <img src="Photos-1-001/IMG_20250128_171132.jpg" alt="Photography 16" loading="lazy">
+                    <div class="photo-overlay"><span>Silent Story</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(15)">
+                <div class="photo-item" onclick="openLightbox(15)" data-title="Depth & Focus">
                     <img src="Photos-1-001/IMG_20250128_171258.jpg" alt="Photography 17" loading="lazy">
+                    <div class="photo-overlay"><span>Depth & Focus</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(16)">
+                <div class="photo-item" onclick="openLightbox(16)" data-title="Essence Captured">
                     <img src="Photos-1-001/IMG_20250128_171350.jpg" alt="Photography 18" loading="lazy">
+                    <div class="photo-overlay"><span>Essence Captured</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(17)">
+                <div class="photo-item" onclick="openLightbox(17)" data-title="Vibrant Colors">
                     <img src="Photos-1-001/IMG_20250128_171431.jpg" alt="Photography 19" loading="lazy">
+                    <div class="photo-overlay"><span>Vibrant Colors</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(18)">
+                <div class="photo-item" onclick="openLightbox(18)" data-title="Nature's Canvas">
                     <img src="Photos-1-001/IMG_20250630_152908.jpg" alt="Photography 20" loading="lazy">
+                    <div class="photo-overlay"><span>Nature's Canvas</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(19)">
+                <div class="photo-item" onclick="openLightbox(19)" data-title="Scenic View">
                     <img src="Photos-1-001/IMG_20250630_153140.jpg" alt="Photography 21" loading="lazy">
+                    <div class="photo-overlay"><span>Scenic View</span></div>
                 </div>
-                <div class="photo-item" onclick="openLightbox(20)">
+                <div class="photo-item" onclick="openLightbox(20)" data-title="Perfect Moment">
                     <img src="Photos-1-001/IMG_20250630_153238.jpg" alt="Photography 22" loading="lazy">
+                    <div class="photo-overlay"><span>Perfect Moment</span></div>
                 </div>
             </div>
 
@@ -342,21 +372,64 @@
             <h2 class="section-title">Let's Connect</h2>
             <p class="contact-description">
                 Ready to collaborate on exciting projects or discuss opportunities in technology and creative fields?
-                I'd love to hear from you. Let's build something amazing together.
+                He'd love to hear from you. Let's build something amazing together.
             </p>
-            <div class="contact-icons">
-                <a href="mailto:abhayrajdwivedi.cs@gmail.com?subject=Hello%20Abhay&body=Hi%20Abhay,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0ABest%20regards" class="contact-icon" title="Email">
-                    <i data-feather="mail"></i>
-                </a>
-                <a href="https://github.com/abhaycodess" class="contact-icon" target="_blank" title="GitHub">
-                    <i data-feather="github"></i>
-                </a>
-                <a href="https://linkedin.com/in/abhay-raj-dwivedi" class="contact-icon" target="_blank" title="LinkedIn">
-                    <i data-feather="linkedin"></i>
-                </a>
-                <a href="tel:+916386583143" class="contact-icon" onclick="copyPhoneNumber()" title="Phone: +91 6386583143">
-                    <i data-feather="phone"></i>
-                </a>
+            
+            <div class="contact-wrapper">
+                <button id="open-form-btn" class="connect-bubble">
+                    <span class="bubble-text">Connect with him</span>
+                    <span class="bubble-arrow">→</span>
+                </button>
+
+                <div class="contact-social">
+                    <h3>Or connect with him on</h3>
+                    <div class="contact-icons">
+                        <a href="mailto:dwivediabhayraj77@gmail.com?subject=Hello%20Abhay&body=Hi%20Abhay,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0ABest%20regards" class="contact-icon" title="Email">
+                            <i data-feather="mail"></i>
+                        </a>
+                        <a href="https://github.com/abhaycodess" class="contact-icon" target="_blank" title="GitHub">
+                            <i data-feather="github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/abhay-raj-dwivedi" class="contact-icon" target="_blank" title="LinkedIn">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="tel:+916386583143" class="contact-icon" onclick="copyPhoneNumber()" title="Phone: +91 6386583143">
+                            <i data-feather="phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Overlay -->
+        <div id="form-modal-overlay" class="modal-overlay"></div>
+        
+        <!-- Form Modal -->
+        <div id="form-modal" class="form-modal">
+            <div class="form-modal-content">
+                <button id="close-form-btn" class="modal-close">
+                    <i data-feather="x"></i>
+                </button>
+                <h3 class="modal-title">Send him a message</h3>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder=" " required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder=" " rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn-primary btn-submit">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
@@ -374,7 +447,6 @@
    // Typing animation for name
     function typeWriter() {
         const text = "Abhay Raj Dwivedi";
-        // Target the new h2 element
         const textElement = document.getElementById("animated-name");
 
         if (!textElement) return;
@@ -384,18 +456,37 @@
             if (i < text.length) {
                 textElement.textContent += text.charAt(i);
                 i++;
-                setTimeout(type, 120); // Typing speed
+                setTimeout(type, 100); // Typing speed
             }
         }
         setTimeout(type, 1500); // Delay before typing starts
     }
+
+    // Active nav link on scroll
+    function updateActiveNavLink() {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 200;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(section.id)) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+
     // Photography lightbox functionality
    const photoImages = [
         'Photos-1-001/IMG_20250115_154800.jpg',
         'Photos-1-001/IMG_20250128_163725.jpg',
         'Photos-1-001/IMG_20250128_164325.jpg',
         'Photos-1-001/IMG_20250128_164350.jpg',
-        // The 5th image path has been removed
         'Photos-1-001/IMG_20250128_164730.jpg',
         'Photos-1-001/IMG_20250128_164952.jpg',
         'Photos-1-001/IMG_20250128_165118.jpg',
@@ -483,12 +574,51 @@
         const navbar = document.querySelector('.navbar');
         if (window.scrollY > 50) { navbar.classList.add('scrolled'); }
         else { navbar.classList.remove('scrolled'); }
+        updateActiveNavLink();
     });
 
     // Initialize scripts when page loads
     window.addEventListener('load', () => {
         typeWriter(); // Call the typing function
-        feather.replace(); // Initialize feather icons
+        // Initialize feather icons
+        feather.replace();
+
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector('.theme-icon');
+        
+        // Function to update theme icon
+        function updateThemeIcon(isDark) {
+            if (isDark) {
+                themeIcon.setAttribute('data-feather', 'sun');
+            } else {
+                themeIcon.setAttribute('data-feather', 'moon');
+            }
+            // Clear the SVG and let feather replace it
+            themeIcon.innerHTML = '';
+            feather.replace();
+        }
+        
+        // Check for saved theme preference or default to dark mode
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        if (currentTheme === 'light') {
+            body.classList.add('light-mode');
+            updateThemeIcon(false);
+        }
+        
+        // Theme toggle click handler
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            
+            if (body.classList.contains('light-mode')) {
+                localStorage.setItem('theme', 'light');
+                updateThemeIcon(false);
+            } else {
+                localStorage.setItem('theme', 'dark');
+                updateThemeIcon(true);
+            }
+        });
 
         // Initialize Masonry for the photo grid
         var grid = document.querySelector('#photo-grid');
@@ -497,11 +627,41 @@
                 itemSelector: '.photo-item',
                 columnWidth: '.grid-sizer',
                 percentPosition: true,
-                gutter: 10
+                gutter: 20
             });
             // Layout after all images have loaded
             imagesLoaded( grid ).on( 'progress', function() {
                 msnry.layout();
+            });
+        }
+
+        // Modal functionality
+        const openFormBtn = document.getElementById('open-form-btn');
+        const closeFormBtn = document.getElementById('close-form-btn');
+        const formModal = document.getElementById('form-modal');
+        const modalOverlay = document.getElementById('form-modal-overlay');
+
+        if (openFormBtn) {
+            openFormBtn.addEventListener('click', function() {
+                formModal.classList.add('active');
+                modalOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+
+        if (closeFormBtn) {
+            closeFormBtn.addEventListener('click', function() {
+                formModal.classList.remove('active');
+                modalOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        }
+
+        if (modalOverlay) {
+            modalOverlay.addEventListener('click', function() {
+                formModal.classList.remove('active');
+                modalOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
             });
         }
     });

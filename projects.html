@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Abhay Raj Dwivedi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">My Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#featured-project" class="nav-link">Featured</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#photography" class="nav-link">Photography</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item resume-dropdown">
+                    <a href="#" class="nav-link resume-btn">Resume <i data-feather="chevron-down" class="dropdown-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="assets/resume.pdf" target="_blank">Tech Resume</a></li>
+                        <li><a href="assets/non-tech-resume.pdf" target="_blank">Non-Tech Resume</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <i data-feather="sun" class="theme-icon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="projects-page">
+        <div class="container">
+            <h2 class="section-title">All Projects</h2>
+            <p class="projects-subtitle">Explore my collection of projects across different domains</p>
+
+            <div class="projects-grid">
+                <!-- Project 0: Cloud Storage & File Management -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i data-feather="cloud"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Cloud Storage & File Management</h3>
+                        <p class="project-description">
+                            Aegis-Cloud is a comprehensive cloud-based storage platform built with React and TypeScript, 
+                            featuring real-time file synchronization, secure authentication, and a modern responsive interface. 
+                            The platform leverages Supabase for backend services and Material UI for a polished user experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Supabase</span>
+                            <span class="tech-badge">TailwindCSS</span>
+                            <span class="tech-badge">Material UI</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/abhaycodess/4th-Year-Project" class="btn-primary"
+                                target="_blank" rel="noopener noreferrer">
+                                <i data-feather="github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 1: Movie Recommendation System -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i data-feather="film"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Movie Recommendation System</h3>
+                        <p class="project-description">
+                            As part of a four-member team, we developed a recommendation system that analyzes user
+                            ratings and viewing data to provide personalized movie suggestions tailored to individual tastes.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Machine Learning</span>
+                            <span class="tech-badge">Data Analysis</span>
+                            <span class="tech-badge">Team Project</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/abhaycodess/Movie-Recommendation-System" class="btn-primary"
+                                target="_blank" rel="noopener noreferrer">
+                                <i data-feather="github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Speech Emotion Recognition -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i data-feather="mic"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Speech Emotion Recognition</h3>
+                        <p class="project-description">
+                            Developed a machine learning model in Python that analyzes vocal features from audio
+                            signals to classify human emotions such as happiness, sadness, and anger.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Machine Learning</span>
+                            <span class="tech-badge">Audio Processing</span>
+                            <span class="tech-badge">Emotion Detection</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/abhaycodess/Speech-Emotion-Recognition-App" class="btn-primary"
+                                target="_blank" rel="noopener noreferrer">
+                                <i data-feather="github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Library Management System -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i data-feather="book-open"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Library Management System</h3>
+                        <p class="project-description">
+                            A console-based Library Management System built in C to handle book inventory, member
+                            records, and book issuance/returns, utilizing file handling for data persistence.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">C</span>
+                            <span class="tech-badge">File Handling</span>
+                            <span class="tech-badge">Data Structures</span>
+                            <span class="tech-badge">Console Application</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/abhaycodess/Library-Management-System" class="btn-primary"
+                                target="_blank" rel="noopener noreferrer">
+                                <i data-feather="github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-description">
+                Ready to collaborate on exciting projects or discuss opportunities in technology and creative fields?
+                He'd love to hear from you. Let's build something amazing together.
+            </p>
+            
+            <div class="contact-wrapper">
+                <button id="open-form-btn" class="connect-bubble">
+                    <span class="bubble-text">Connect with him</span>
+                    <span class="bubble-arrow">→</span>
+                </button>
+
+                <div class="contact-social">
+                    <h3>Or connect with him on</h3>
+                    <div class="contact-icons">
+                        <a href="mailto:abhayrajdwivedi.cs@gmail.com?subject=Hello%20Abhay&body=Hi%20Abhay,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0ABest%20regards" class="contact-icon" title="Email">
+                            <i data-feather="mail"></i>
+                        </a>
+                        <a href="https://github.com/abhaycodess" class="contact-icon" target="_blank" title="GitHub">
+                            <i data-feather="github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/abhay-raj-dwivedi" class="contact-icon" target="_blank" title="LinkedIn">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="tel:+916386583143" class="contact-icon" onclick="copyPhoneNumber()" title="Phone: +91 6386583143">
+                            <i data-feather="phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Overlay -->
+        <div id="form-modal-overlay" class="modal-overlay"></div>
+        
+        <!-- Form Modal -->
+        <div id="form-modal" class="form-modal">
+            <div class="form-modal-content">
+                <button id="close-form-btn" class="modal-close">
+                    <i data-feather="x"></i>
+                </button>
+                <h3 class="modal-title">Send him a message</h3>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder=" " required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder=" " rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn-primary btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Abhay Raj Dwivedi. All rights reserved. | Designed & Developed with <span style="color: var(--accent-primary);">♥</span></p>
+    </footer>
+
+    <script>
+        // Initialize feather icons
+        // Initialize feather icons
+        feather.replace();
+        
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector('.theme-icon');
+        
+        // Function to update theme icon
+        function updateThemeIcon(isDark) {
+            if (isDark) {
+                themeIcon.setAttribute('data-feather', 'sun');
+            } else {
+                themeIcon.setAttribute('data-feather', 'moon');
+            }
+            // Clear the SVG and let feather replace it
+            themeIcon.innerHTML = '';
+            feather.replace();
+        }
+        
+        // Check for saved theme preference or default to dark mode
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        if (currentTheme === 'light') {
+            body.classList.add('light-mode');
+            updateThemeIcon(false);
+        }
+        
+        // Theme toggle click handler
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            
+            if (body.classList.contains('light-mode')) {
+                localStorage.setItem('theme', 'light');
+                updateThemeIcon(false);
+            } else {
+                localStorage.setItem('theme', 'dark');
+                updateThemeIcon(true);
+            }
+        });
+
+        // Modal functionality
+        const openFormBtn = document.getElementById('open-form-btn');
+        const closeFormBtn = document.getElementById('close-form-btn');
+        const formModal = document.getElementById('form-modal');
+        const modalOverlay = document.getElementById('form-modal-overlay');
+
+        if (openFormBtn) {
+            openFormBtn.addEventListener('click', function() {
+                formModal.classList.add('active');
+                modalOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+
+        if (closeFormBtn) {
+            closeFormBtn.addEventListener('click', function() {
+                formModal.classList.remove('active');
+                modalOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        }
+
+        if (modalOverlay) {
+            modalOverlay.addEventListener('click', function() {
+                formModal.classList.remove('active');
+                modalOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
